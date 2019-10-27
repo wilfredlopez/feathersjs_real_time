@@ -1,0 +1,29 @@
+{
+  "name": "feathers_realtime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@feathersjs/express": "^4.3.10",
+    "@feathersjs/feathers": "^4.3.10",
+    "@feathersjs/socketio": "^4.3.10",
+    "@types/mongoose": "^5.5.23",
+    "dotenv": "^8.2.0",
+    "feathers-mongoose": "^8.1.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "typescript": "^3.6.4",
+    "ts-node-dev": "^1.0.0-pre.43"
+  }
+}

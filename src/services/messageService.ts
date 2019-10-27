@@ -24,23 +24,16 @@ class MessageService implements ServiceMethods<any> {
   }
 
   async find() {
-    //Last 5 messages
-    const messages = await fService.Model.find({}).limit(5)
+    const messages: Message[] = await fService.Model.find({})
     // console.log(messages)
 
-    //THIS SORT IS NOT NECCESARY BUT DOING IT FOR PRACTICE
-    messages.sort(function(a, b) {
-      if (a.time.getMilliseconds() >= b.time.getMilliseconds()) {
-        return -1
-      } else if (a.time.getMilliseconds() <= b.time.getMilliseconds()) {
-        return 1
-      } else {
-        return -1
-      }
-    })
+    //Last 5 messages
 
-    this.messages = messages
-    return messages
+    const limit = messages.length - 5
+    const last5 = messages.filter((m, i) => i > limit)
+
+    this.messages = last5
+    return last5
   }
 
   async create(data: { text: string; username: string }) {

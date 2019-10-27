@@ -1,4 +1,4 @@
-# Real Time App | Chat and Ideas service with Socketio
+# Real Time App | Chat and Ideas with SocketIO
 
 Install packages `npm install`
 Run dev enviroment `npm run dev`
@@ -7,8 +7,8 @@ Start App `npm start`
 
 ## Feathersjs
 
-read more @ `https://docs.feathersjs.com/`
+read more @ https://docs.feathersjs.com/
 
 # Using MongoDB / Mongoose and SocketIo
 
-`https://github.com/feathersjs-ecosystem/feathers-mongoose`
+https://github.com/feathersjs-ecosystem/feathers-mongoose

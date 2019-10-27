@@ -3,3 +3,12 @@
     max-width: 800px;
   }
 }
+
+.chatParagraph {
+  color: black;
+}
+
+.chatParagraph:last-child {
+  color: rgb(38, 184, 24);
+  font-weight: bold;
+}

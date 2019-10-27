@@ -89,9 +89,9 @@ function sendText() {
 
 //RENDER
 function renderMessage(messages) {
-  document.getElementById("messages").innerHTML += `<div class="text-dark">
+  document.getElementById("messages").innerHTML += `<div class="chatParagraph">
                <div class="">
-                 <p class="lead">
+                 <p class="lead ">
                  <strong>
 
                  ${messages.username}: 
